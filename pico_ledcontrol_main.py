@@ -97,6 +97,11 @@ while True:
         elif line == "OFF":
             all_off()
             print("OK")
+            
+        # ── ALL ON ───────────────────────────────────────
+        elif line == "ON":
+            all_on()
+            print("OK")
 
         # ── UNKNOWN COMMAND ───────────────────────────────
         else:
