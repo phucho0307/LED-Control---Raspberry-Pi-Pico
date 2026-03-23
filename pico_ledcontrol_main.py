@@ -48,6 +48,11 @@ def all_off():
     """Turn all lights off."""
     for i in LIGHTS:
         set_rgb(i, 0, 0, 0)
+        
+def all_on(r=255, g=255, b=255):
+    """Turn all lights on. Defaults to white."""
+    for i in LIGHTS:
+        set_rgb(i, r, g, b)
 
 # ─── STARTUP ──────────────────────────────────────────────
 all_off()  # start with all lights off
